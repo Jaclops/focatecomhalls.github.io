@@ -1,0 +1,53 @@
+body {
+  .video {
+    background-color: black;
+    position: relative;
+    top: 300px;
+    @include mobile{
+      top: -510px;
+    }
+    .wrapper{
+      height: 1080px;
+      width: 100%;
+      position: relative;
+      @include mobile{
+        height: 500px;
+      }
+      video{
+        position: relative;
+        top: -150px;
+        background-color: black;
+        overflow: hidden;
+        z-index: -99;
+        width: 100%;
+        @include mobile{
+          width: 100%;
+
+        }
+      }
+      img.focate{
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        z-index: 3;
+        @include mobile{
+          top: 215px;
+          width: 154px;
+          height: 108px;
+        }
+      }
+      img.btn {
+        z-index: 99;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include mobile{
+          top: 210px;
+          left: 25%;
+          transform: scale(0.25);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+body {
+    .hero {
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: -80px;
+    .wrapper {
+      width: 100%;
+      height: 100vh;
+      .slick {
+        .slick-item {
+          overflow: hidden;
+          img{
+            margin: 0 auto;
+            width: 100%;
+          }
+        }
+      }
+
+      .breakers {
+        pointer-events: none;
+        background-image: url("../img/breaker_1.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -210px;
+        height: 310px;
+        z-index: 2;
+        p {
+          font-family: 'Azo Sans Regular';
+          font-size: 22px;
+          color: white;
+          position: absolute;
+          top: 60px;
+          left: 80px;
+          line-height: 35px;
+          word-spacing: 5px;
+          letter-spacing: 5px;
+          line-height: 50px;
+          width: 700px;
+        }
+        h1 {
+          font-family: 'Azo Sans Regular';
+          font-size: 30px;
+          color: #19276D;
+          position: absolute;
+          right: 30px;
+          top: 130px;
+          transform: rotate(2deg);
+          word-spacing: 5px;
+          letter-spacing: 5px;
+        }
+      }
+      @include mobile{
+        .breakers{
+          height: 90px;
+          top: -60px;
+          p{
+            font-size: 11px;
+            top: 6px;
+            left: 10px;
+            line-height: 16px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            line-height: 15px;
+            width: 220px;
+          }
+          h1 {
+            font-size: 13px;
+            right: 0px;
+            top: 25px;
+            transform: rotate(2deg);
+            word-spacing: 3px;
+            letter-spacing: 2px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

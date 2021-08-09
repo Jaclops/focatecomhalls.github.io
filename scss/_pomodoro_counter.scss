@@ -1,0 +1,42 @@
+body{
+  .pomodoro-counter{
+    position: relative;
+    top: -450px;
+    z-index: 2;
+    @include mobile{
+      top: -1050px;
+    }
+    .wrapper{
+      height: 670px;
+      background-image: url("../img/breaker_6.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      @include mobile{
+        height: 200px;
+      }
+      h1{
+        font-family: 'Azo Sans Tn';
+        font-size: 48px;
+        color: white;
+        position: absolute;
+        top: 250px;
+        left: 230px;
+        line-height: 100px;
+        @include mobile{
+          font-size: 18px;
+          top: 60px;
+          left: 30px;
+          line-height: 40px;
+        }
+      }
+      .demo{
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        top: 170px;
+        left: 900px;
+      }
+    }
+  }
+}

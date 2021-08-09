@@ -1,0 +1,8 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  height: 17500px;
+  @include mobile{
+    height: 3500px;
+  }
+}

@@ -1,0 +1,127 @@
+body {
+  .produtos{
+    position: relative;
+    top: -5px;
+    @include mobile{
+      top: -520px;
+    }
+    .wrapper{
+      width: 100%;
+      height: 100%;
+      background-color: #16B2F1;
+      padding-bottom: 100px;
+      .breakers{
+        width: 659px;
+        height: 114px;
+        background-image: url("../img/breaker_2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -90px;
+        @include mobile{
+          width: 220px;
+          height: 38px;
+          top: -30px;
+        }
+        h1{
+          font-family: 'Azo Sans Bold Italic';
+          color: white;
+          font-size: 48px;
+          position: absolute;
+          top: 0px;
+          left: 50px;
+          @include mobile{
+            top: -3px;
+            left: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 100%;
+        @include mobile {
+          grid-template-columns: 100%;
+          grid-template-rows: 35%;
+        }
+        .card{
+          width: 547px;
+          height: 198px;
+          position: relative;
+          background-image: url("../img/product_background.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 50px auto;
+          @include mobile{
+            width: 365px;
+            height: 132px;
+            margin-bottom: 20px;
+          }
+          img.product{
+            position: absolute;
+            top: 43px;
+            left: 99px;
+            @include mobile{
+              width: 239px;
+              height: 133px;
+              top: 21px;
+              left: 49px;
+            }
+          }
+          a{
+            position: absolute;
+            top: 85px;
+            right: 45px;
+            img:hover{
+              transform: scale(1.1);
+            }
+            @include mobile{
+              top: 42px;
+              right: 25px;
+            }
+          }
+        }
+        .product-btn{
+          width: 632px;
+          height: 173px;
+          font-size: 30px;
+          font-family: 'Azo Sans Bold Italic';
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 320px;
+          background-image: url("../img/product_btn.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          .btn:hover{
+            text-decoration: underline;
+          }
+          @include mobile{
+            width: 421px;
+            height: 115px;
+            font-size: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 0px;
+            position: absolute;
+            top: 630px;
+            right: 0px;
+
+          }
+        }
+        .btn{
+          text-decoration: none;
+          color: #113678;
+          position: relative;
+          top: 50%;
+          left: 30px;
+          transform: translateY(-50%);
+          @include mobile{
+            top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
